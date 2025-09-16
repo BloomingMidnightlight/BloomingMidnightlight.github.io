@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact & Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            max-width: 700px;
+            margin: auto;
+            color: #333;
+        }
+
+        h2 {
+            color: #ff6f61;
+            margin-top: 2rem;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contact Form Section -->
+    <h2>Get in Touch!</h2>
+    <p>We’d love to hear from you. Fill out the form below and we’ll get back to you soon!</p>
+
+    <form action="#" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="collaboration">Project Collaboration</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- Survey Section -->
+    <h2>Quick Survey</h2>
+    <p>Help us improve by answering a few quick questions!</p>
+
+    <form action="#" method="GET">
+        <label for="find">How did you find my portfolio?</label>
+        <select id="find" name="find">
+            <option value="google">Google Search</option>
+            <option value="social">Social Media</option>
+            <option value="referral">Referral</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Rate your overall experience on my site:</label>
+        <input type="radio" name="rating" value="1"> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+
+        <label for="comments">Any additional comments?</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit Survey</button>
+        <button type="reset">Reset Survey</button>
+    </form>
+
+</body>
+
+</html>
