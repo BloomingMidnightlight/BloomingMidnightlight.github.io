@@ -3,116 +3,157 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact & Survey</title>
+    <title>Cybersecurity Club Website Planner</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #fff0f5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #5c3a3a;
             padding: 2rem;
-            max-width: 700px;
-            margin: auto;
-            color: #333;
+            background-image: url('https://www.transparenttextures.com/patterns/blossom.png');
         }
 
-        h2 {
-            color: #ff6f61;
-            margin-top: 2rem;
-        }
-
-        form {
-            background-color: #fff;
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #d36ba6;
             margin-bottom: 2rem;
+            border-bottom: 2px dashed #f8c8dc;
+            padding-bottom: 0.5rem;
         }
 
-        label {
-            display: block;
-            margin-top: 1rem;
+        table {
+            width: 90%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: #fffafc;
+            box-shadow: 0 0 10px #f3c6d3;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: 1.3rem;
             font-weight: bold;
+            color: #b85c8a;
+            margin: 1rem 0;
         }
 
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-top: 0.25rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        th,
+        td {
+            border: 1px solid #f3c6d3;
+            padding: 12px;
+            text-align: center;
         }
 
-        button {
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            background-color: #ff6f61;
-            color: white;
-            cursor: pointer;
+        th {
+            background-color: #f8c8dc;
+            color: #5c3a3a;
         }
 
-        button[type="reset"] {
-            background-color: #ccc;
-            margin-left: 0.5rem;
+        td[colspan],
+        td[rowspan] {
+            background-color: #ffd2e9;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #a0527d;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Contact Form Section -->
-    <h2>Get in Touch!</h2>
-    <p>We’d love to hear from you. Fill out the form below and we’ll get back to you soon!</p>
+    <h1>Cybersecurity Club Website Planner 🌸</h1>
 
-    <form action="#" method="GET">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+    <!-- Table 1: Weekly Schedule -->
+    <table>
+        <caption>Cybersecurity Club Website Weekly Schedule</caption>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9–11 AM</th>
+                <th>11–1 PM</th>
+                <th>1–3 PM</th>
+                <th>3–5 PM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Wireframe Design</td>
+                <td colspan="2">Club Page Layout in Figma</td>
+                <td>HTML Structure Review</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Accessibility Audit</td>
+                <td>Navigation Testing</td>
+                <td>CSS Styling</td>
+                <td>Backup Strategy Setup</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="4">Extended Coding Session (Forms, PHP, and Validation)</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Security Tips Section</td>
+                <td>Image Optimization</td>
+                <td>Peer Feedback</td>
+                <td>GitHub Sync</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+    <!-- Table 2: Multi-Day Task List -->
+    <table>
+        <caption>Cybersecurity Website Project Tasks</caption>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Day</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Homepage Development</td>
+                <td>Monday</td>
+                <td>Wireframe and Layout Planning</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Semantic HTML Implementation</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Accessibility and Mobile Responsiveness</td>
+            </tr>
+            <tr>
+                <td>Security Resources Page</td>
+                <td>Thursday</td>
+                <td>Content Draft and External Link Integration</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Testing & Deployment</td>
+                <td>Friday</td>
+                <td>Cross-Browser Testing</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Final Deployment to Club Server</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject">
-            <option value="general">General Inquiry</option>
-            <option value="collaboration">Project Collaboration</option>
-            <option value="feedback">Feedback</option>
-        </select>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
-
-    <!-- Survey Section -->
-    <h2>Quick Survey</h2>
-    <p>Help us improve by answering a few quick questions!</p>
-
-    <form action="#" method="GET">
-        <label for="find">How did you find my portfolio?</label>
-        <select id="find" name="find">
-            <option value="google">Google Search</option>
-            <option value="social">Social Media</option>
-            <option value="referral">Referral</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label>Rate your overall experience on my site:</label>
-        <input type="radio" name="rating" value="1"> 1
-        <input type="radio" name="rating" value="2"> 2
-        <input type="radio" name="rating" value="3"> 3
-        <input type="radio" name="rating" value="4"> 4
-        <input type="radio" name="rating" value="5"> 5
-
-        <label for="comments">Any additional comments?</label>
-        <textarea id="comments" name="comments" rows="4"></textarea>
-
-        <button type="submit">Submit Survey</button>
-        <button type="reset">Reset Survey</button>
-    </form>
+    <footer>
+        <p>&copy; 2025 Sinai Hernandez. yuhhh>:3 🌸</p>
+    </footer>
 
 </body>
 
