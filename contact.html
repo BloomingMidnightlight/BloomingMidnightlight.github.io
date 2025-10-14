@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Survey Page</title>
     <style>
         body {
@@ -13,12 +14,35 @@
             background-image: url('https://www.transparenttextures.com/patterns/blossom.png');
         }
 
+        header {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
         h2 {
             color: #d36ba6;
             font-size: 2rem;
             border-bottom: 2px dashed #f8c8dc;
         }
 
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #a0527d;
+            font-weight: bold;
+            background-color: #ffe4e1;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #f3c6d3;
+        }
+        
         form {
             background-color: #ffe4e1;
             border: 2px solid #f8c8dc;
@@ -68,6 +92,17 @@
 
 <body>
 
+    <header>
+        <h1>Contact Me 🌸</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="fav-list.html">🎧 My Favorites</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+<main>
     <!-- Contact Form Section -->
     <section>
         <h2>Get in Touch!</h2>
@@ -129,7 +164,13 @@
             <button type="reset" class="reset-btn">Reset Survey</button>
         </form>
     </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Sinai Hernandez. All rights reserved.</p>
+</footer>
 
 </body>
 
 </html>
+
