@@ -1,0 +1,73 @@
+body {
+    background-color: #fdf6f0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #3a2f2f;
+    margin: 0;
+    padding: 0;
+}
+
+.wishlist-title {
+    font-size: 2.5rem;
+    color: #51166ab4;
+    font-weight: 600;
+}
+
+.wishlist-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.wishlist-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wishlist-card:hover {
+    transform: scale(1.02);
+}
+
+.img-wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.wishlist-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 200, 150, 0.3);
+}
+
+.wishlist-item-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #b537eb;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.wishlist-description {
+    font-size: 1rem;
+    color: #5a4a42;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer {
+    background-color: #eee2f3;
+    color: #ca5aec;
+    font-size: 0.9rem;
+}
