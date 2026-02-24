@@ -282,13 +282,22 @@
         });
 
         //project video JS
-       
+       function loadVideo(element, videoId) {
+        element.parentElement.innerHTML = `
+            <iframe 
+                src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+            </iframe>
+        `;
+    }
     </script>
 
 </body>
 
 
 </html>
+
 
 
 
