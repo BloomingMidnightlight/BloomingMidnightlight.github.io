@@ -199,41 +199,39 @@
     <!-- Projects Preview -->
     <section id="projects" class="projects">
         <h2>Featured Projects</h2>
+    
         <div class="grid">
-            <!-- Project 1 -->
+    
             <div class="card">
                 <div class="video-wrapper">
-                    <div class="video-thumbnail" 
-                            onclick="loadVideo(this, 'q6G2WlneA84')"
-                            style="background-image: url('images/display-zoo.jpg');">
-                        <div class="play-button"></div>
-                    </div>
-                 </div>
-            </div>
-            
-                <h3>FINAL PROJECT</h3>
-                <h5>This project requires a local PHP/MySQL environment to run.</h5>
-                <p>A completed PHP and SQL website displaying both the back and front end for 'Parque de las Leyendas'.
-                </p>
-                <a href="learn-more.html">Learn More</a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="card">
-                <div class="video-wrapper">
-                    <div class="video-thumbnail" 
-                            onclick="loadVideo(this, 'VofvyO-tXG0')"
-                            style="background-image: url('images/Gym-display.jpg');">
+                    <div class="video-thumbnail"
+                         onclick="loadVideo(this, 'q6G2WlneA84')"
+                         style="background-image: url('images/display-zoo.jpg');">
                         <div class="play-button"></div>
                     </div>
                 </div>
+    
+                <h3>FINAL PROJECT</h3>
+                <h5>This project requires a local PHP/MySQL environment to run.</h5>
+                <p>A completed PHP and SQL website displaying both the back and front end.</p>
+                <a href="learn-more.html">Learn More</a>
             </div>
-        
+    
+            <div class="card">
+                <div class="video-wrapper">
+                    <div class="video-thumbnail"
+                         onclick="loadVideo(this, 'VofvyO-tXG0')"
+                         style="background-image: url('images/Gym-display.jpg');">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
+    
                 <h3>Fitness Club Website</h3>
                 <h5>This project requires a local PHP/MySQL environment to run.</h5>
-                <p>A working PHP and SQL based website with its own database fully functional front end.</p>
+                <p>A working PHP and SQL based website.</p>
                 <a href="learn-more-2.html">Learn More</a>
             </div>
+    
         </div>
     </section>
 
@@ -283,6 +281,19 @@
             navLinks.classList.toggle("show");
         });
 
+        //project video JS
+        function loadVideo(element, videoId) {
+        element.parentElement.innerHTML = `
+            <iframe 
+                src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                style="width:100%; height:100%; border-radius:8px;">
+            </iframe>
+        `;
+    }
+
        
     </script>
 
@@ -290,6 +301,7 @@
 
 
 </html>
+
 
 
 
